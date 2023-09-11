@@ -1,0 +1,107 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.weather-app {
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+#search-bar-input {
+  border-radius: 20px;
+  width: 100%;
+  background: #ced4da;
+  padding: 10px;
+  margin: 15px 0px;
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+}
+
+h1 {
+  padding: 25px 0 0 5px;
+  font-weight: 900;
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 20px;
+  padding: 5px 0 0 5px;
+}
+
+#weather-forecast-today {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#weather-forecast-today-temp {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.units {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#celsius-link,
+#fahrenheit-link {
+  text-decoration: none;
+}
+
+#weather-forecast-today-divider {
+  width: 2px;
+}
+
+#weather-forecast-today-detail {
+  margin-top: 50px;
+}
+
+#sun-image {
+  width: 120px;
+  padding: 10px 0 0 0;
+}
+
+.col-weather {
+  text-align: center;
+}
+
+.column-weather-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.day {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.weather-temp {
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.weather-max {
+  padding-left: 10px;
+}
+
+.weather-min {
+  padding-right: 30px;
+  color: #70757a;
+}
+
+.divider-vertikal {
+  width: 2px;
+  height: 100%;
+  background-color: #c7c8c9;
+}
+
+.divider-horizontal {
+  width: 100%;
+  height: 2px;
+  background-color: #c7c8c9;
+  margin: 15px 0px;
+}
