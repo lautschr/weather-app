@@ -105,3 +105,8 @@ h2 {
   background-color: #c7c8c9;
   margin: 15px 0px;
 }
+
+.open-source {
+  display: block;
+  text-align: center;
+}
