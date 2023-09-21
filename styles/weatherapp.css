@@ -2,6 +2,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.container {
+  margin: 20px auto;
+  max-width: 700px;
+}
+
 .weather-app {
   border: 1px solid #ced4da;
   border-radius: 10px;
@@ -104,9 +109,4 @@ h2 {
   height: 2px;
   background-color: #c7c8c9;
   margin: 15px 0px;
-}
-
-.open-source {
-  display: block;
-  text-align: center;
 }
