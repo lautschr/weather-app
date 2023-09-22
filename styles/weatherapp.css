@@ -16,12 +16,17 @@ body {
 }
 
 #search-bar-input {
-  border-radius: 20px;
+  border-radius: 10px;
   width: 100%;
   background: #ced4da;
   padding: 10px;
   margin: 15px 0px;
   box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+}
+
+#search-button {
+  margin: 15px 0px;
+  padding: 10px;
 }
 
 h1 {

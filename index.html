@@ -25,12 +25,24 @@
       <div class="weather-app">
         <!-- Search -->
         <form id="search-bar">
-          <input
-            id="search-bar-input"
-            type="search"
-            placeholder="Search"
-            autofocus="on"
-          />
+          <div class="row">
+            <div class="col-9">
+              <input
+                id="search-bar-input"
+                type="search"
+                placeholder="Type a city..."
+                autofocus="on"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                id="search-button"
+                type="submit"
+                value="Search"
+                class="btn btn-primary w-100"
+              />
+            </div>
+          </div>
         </form>
 
         <button class="btn btn-success" id="current-location-button">
