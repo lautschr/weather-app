@@ -69,6 +69,14 @@ function showWeatherData(response) {
   let description = response.data.weather[0].description;
   let descriptionToday = document.querySelector("#weather-forecast-today-desc");
   descriptionToday.innerHTML = `${description}`;
+
+  // weather icon
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 // Current Location Button
