@@ -3,7 +3,7 @@ let units = "metric";
 
 //Current Day + Time
 let now = new Date();
-let h2 = document.querySelector("h2");
+let currentTime = document.querySelector("#currentTime");
 
 let days = [
   "Sunday",
@@ -26,7 +26,7 @@ if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 
-h2.innerHTML = `${day} ${hours}:${minutes}`;
+currentTime.innerHTML = `${day} ${hours}:${minutes}`;
 
 //City Search
 function handleSubmit(event) {

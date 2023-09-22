@@ -65,9 +65,8 @@ h2 {
   margin-top: 50px;
 }
 
-#weather-forecast-today-desc {
+#weather-forecast-today-desc::first-letter {
   text-transform: capitalize;
-  padding-right: 35px;
 }
 
 #sun-image {
