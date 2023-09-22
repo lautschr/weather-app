@@ -77,7 +77,25 @@ function showWeatherData(response) {
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  // fahrenheit
+  celsiusTemp = response.data.main.temp;
 }
+
+// Fahrenheit Converter
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector(
+    "#weather-forecast-today-temp"
+  );
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
+}
+
+let celsiusTemp = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 // Current Location Button
 function showPosition(position) {
