@@ -82,20 +82,42 @@ function showWeatherData(response) {
   celsiusTemp = response.data.main.temp;
 }
 
-// Fahrenheit Converter
+// Function Fahrenheit Converter
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector(
     "#weather-forecast-today-temp"
   );
+
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+
   let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
 
+// Function Celsius Converter
+function convertToCelcius(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector(
+    "#weather-forecast-today-temp"
+  );
+
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+
+  temperatureElement.innerHTML = Math.round(celsiusTemp);
+}
+
 let celsiusTemp = null;
 
+// Fahrenheit Converter
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
+
+// Celsius Converter
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertToCelcius);
 
 // Current Location Button
 function showPosition(position) {
