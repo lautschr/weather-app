@@ -43,7 +43,7 @@ let form = document.querySelector("#search-bar");
 form.addEventListener("submit", handleSubmit);
 
 //Weather API
-
+//show city
 function showWeatherData(response) {
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${response.data.name}`;
@@ -66,7 +66,7 @@ function showWeatherData(response) {
   windToday.innerHTML = `Wind: ${wind} km/h`;
 
   // description weather
-  let description = response.data.weather[0].main;
+  let description = response.data.weather[0].description;
   let descriptionToday = document.querySelector("#weather-forecast-today-desc");
   descriptionToday.innerHTML = `${description}`;
 }
