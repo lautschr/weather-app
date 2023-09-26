@@ -93,33 +93,21 @@ h2 {
   padding: 10px 0 0 0;
 }
 
-.col-weather {
+.weather-forecast {
   text-align: center;
 }
 
-.column-weather-image {
-  display: block;
-  margin: 0 auto;
-}
-
-.day {
+.weather-forecast-day {
   font-size: 18px;
   font-weight: bold;
 }
 
-.weather-temp {
-  display: block;
-  margin: 0 auto;
+.weather-forecast-daily-temperatures {
   font-size: 14px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
-.weather-max {
-  padding-left: 10px;
-}
-
-.weather-min {
-  padding-right: 30px;
+.weather-forecast-temperature-min {
   color: #70757a;
 }
 
