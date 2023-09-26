@@ -28,7 +28,8 @@ if (minutes < 10) {
 
 currentTime.innerHTML = `${day} ${hours}:${minutes}`;
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
@@ -57,7 +58,14 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
-//City Search
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "bd3bb6534458ba51b48c49f5155745b6";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+// City Search
 function handleSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-bar-input");
@@ -109,6 +117,9 @@ function showWeatherData(response) {
 
   // fahrenheit
   celsiusTemp = response.data.main.temp;
+
+  // forecast
+  getForecast(response.data.coord);
 }
 
 // Function Fahrenheit Converter
@@ -164,5 +175,3 @@ function getCurrentPosition(event) {
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentPosition);
-
-displayForecast();
