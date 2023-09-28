@@ -81,14 +81,15 @@ function getForecast(coordinates) {
 }
 
 // City Search
+function search(city) {
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showWeatherData);
+}
+
 function handleSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-bar-input");
-
-  let city = searchInput.value;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-
-  axios.get(apiUrl).then(showWeatherData);
+  search(searchInput.value);
 }
 
 let form = document.querySelector("#search-bar");
