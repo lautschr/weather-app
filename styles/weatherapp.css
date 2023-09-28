@@ -57,11 +57,6 @@ h2 {
   top: -25px;
 }
 
-#celsius-link,
-#fahrenheit-link {
-  text-decoration: none;
-}
-
 #weather-forecast-today .active {
   color: black;
   cursor: default;
