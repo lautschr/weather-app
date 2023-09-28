@@ -13,15 +13,32 @@ body {
   padding: 15px;
   margin: 20px auto;
   max-width: 700px;
+  background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  color: white;
+}
+
+.weather-forecast {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 10px 40px rgba(17, 9, 9, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #search-bar-input {
-  border-radius: 10px;
-  width: 100%;
-  background: #ced4da;
   padding: 10px;
   margin: 15px 0px;
-  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+  border-radius: 10px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.2);
+  
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
 }
 
 #search-button {
@@ -100,10 +117,7 @@ h2 {
 .weather-forecast-daily-temperatures {
   font-size: 14px;
   padding-top: 5px;
-}
-
-.weather-forecast-temperature-min {
-  color: #70757a;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .divider-vertikal {
