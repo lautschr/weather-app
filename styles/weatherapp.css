@@ -92,15 +92,6 @@ h2 {
   top: -25px;
 }
 
-#weather-forecast-today .active {
-  color: black;
-  cursor: default;
-}
-
-#weather-forecast-today .active:hover {
-  text-decoration: none;
-}
-
 #weather-forecast-today-divider {
   width: 2px;
 }
