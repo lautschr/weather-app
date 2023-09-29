@@ -36,7 +36,6 @@ body {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
   background-color: rgba(255, 255, 255, 0.2);
-  
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
 }
@@ -44,10 +43,29 @@ body {
 #search-button {
   margin: 15px 0px;
   padding: 10px;
+  background-color: #246a73;
+  border-color: #246a73;
+}
+
+#search-button:hover {
+  background-color: #247b7b;
+  border-color: #247b7b;
+}
+
+#current-location-button {
+  background-color: #168aad;
+  border-color: #168aad;
+  margin: 15px 0px;
+  padding: 10px;
+}
+
+#current-location-button:hover {
+  background-color: #1a759f;
+  border-color: #1a759f;
 }
 
 h1 {
-  padding: 25px 0 0 5px;
+  padding: 15px 0 0 5px;
   font-weight: 900;
   font-size: 28px;
 }
